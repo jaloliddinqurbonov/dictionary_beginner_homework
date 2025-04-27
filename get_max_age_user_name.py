@@ -7,4 +7,9 @@ def get_max_age_user_name(data:list) -> str:
     Returns:
         str: The name of the user with the maximum age in the dictionary
     """
-    return 
+    l=[i["age"] for i in data]
+    a=l.index(max(l))
+    return data[a]['job']
+print(get_max_age_user_name([{'job':'fizik',"age":32},{"job":'ani',"age":90}]))
+
+# tushuntirish

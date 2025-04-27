@@ -6,4 +6,10 @@ def sum_even_values(data: dict) -> int:
     Returns:
         int: The sum of all even values in the dictionary
     '''
-    return 
+    l=data.values()
+    s= sum([i for i in l if i%2==0])
+    return s
+print(sum_even_values({"a":1,"b":2,"c":4,"d":5}))
+
+
+# ushbu misolda map() funksiyasidan foydalanish

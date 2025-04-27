@@ -6,4 +6,7 @@ def sum_age_values(data:list) -> int:
     Returns:
         int: The sum of all age values in the dictionary
     """
-    return 
+    s=0
+    for i in data:
+        s+=i["age"]
+    return s
